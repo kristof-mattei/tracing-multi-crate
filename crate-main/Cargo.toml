@@ -1,0 +1,14 @@
+[package]
+name = "crate-main"
+edition = "2021"
+
+[lints]
+workspace = true
+
+[dependencies]
+crate-a = { path = "../crate-a" }
+crate-b = { path = "../crate-b" }
+
+tracing = "0.1.41"
+tracing-error = "0.2.1"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
